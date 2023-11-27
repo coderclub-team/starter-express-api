@@ -1,0 +1,110 @@
+GET {{baseUrl}}/app/config
+
+###
+POST {{baseUrl}}/me/login
+Content-Type: application/json
+
+{
+    "MobileNo":"9566935886",
+    "Password":"987654321"
+}
+###
+
+
+GET {{baseUrl}}/me/cart
+Content-Type: application/json
+Authorization:  :Bearer {{token}}
+
+
+
+###
+
+POST {{baseUrl}}/me/cart
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "ProductGUID":1,
+    "Quantity":1
+
+   
+}
+
+###
+
+
+POST {{baseUrl}}/me/cart
+Content-Type: application/json
+Authorization:  :Bearer {{token}}
+
+{
+    "ProductGUID":2,
+    "IsSubscription":1, 
+    "SubsCycleGUID":8,
+    "SubsOccurences":1,
+    "SubscriptionStartDate": "2023-09-01T10:17:51.637Z",
+    "SubscriptionEndDate": "2023-10-01T10:17:51.637Z"
+   
+}
+
+###
+
+
+
+PATCH  {{baseUrl}}/me/cart
+Content-Type: application/json
+Authorization:  :Bearer {{token}}
+
+{
+    "ProductGUID":1,
+    "Quantity":2,
+     "IsSubscription":1,
+     "SubsOccurences":1
+}
+
+###
+
+###
+
+PATCH  {{baseUrl}}/me/cart
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "ProductGUID":1,
+    "IsSubscription":1, 
+    "SubsCycleGUID":1
+   ,"SubsOccurences":1
+}
+
+###
+POST  {{baseUrl}}/me/cart/checkout
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+"PaymentMode":"Wallet",
+"PromoCode": "SUMMER20"
+}
+
+
+
+
+
+
+####
+
+GET {{baseUrl}}/wallets/balance
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+POST {{baseUrl}}/wallets
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "type":"credit",
+    "amount":500
+
+}

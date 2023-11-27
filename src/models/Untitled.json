@@ -1,0 +1,17 @@
+[
+  {
+    "BillingCycleGUID": 1,
+    "BillingCycleName": "Daily",
+    "NumberOfCycles": 1
+  },
+  {
+    "BillingCycleGUID": 2,
+    "BillingCycleName": "Optional Days In Week ",
+    "NumberOfCycles": 1
+  },
+  {
+    "BillingCycleGUID": 3,
+    "BillingCycleName": "Nth Days",
+    "NumberOfCycles": 1
+  }
+]

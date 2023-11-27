@@ -1,0 +1,19 @@
+POST http://localhost:3000/api/me/cart/checkout
+
+###
+POST http://localhost:3000/api/stores/2/subscriptions/create/request
+Content-Type: application/json
+
+{
+  "product_id": 1,
+  "interval_type": "Daily Subscription Interval",
+  "sunday": 1,
+  "monday": 1,
+  "tuesday": 1,
+  "wednesday": 1,
+  "thursday": 1,
+  "friday": 1,
+  "saturday": 1,
+  "nthday_interval": 1,
+  "nth_day_qty": 1
+}

@@ -1,0 +1,813 @@
+{
+	"info": {
+		"_postman_id": "e6bbd3e2-d42e-4475-a338-7f6559aaf3ff",
+		"name": "TamilMilk",
+		"description": "Welcome to the documentation for our API service for an ecommerce business. Our API service provides access to various modules including authentication, products, orders, payments, and shipping. This documentation will guide you on how to use our API service.\n\n## Authentication\n\nTo access our API service, you will need to authenticate yourself. We use OAuth 2.0 for authentication, which means you will need to obtain an access token to make API calls. You can obtain an access token by sending a request to our authentication endpoint with your client ID and client secret. Once you have obtained an access token, you can use it to make API calls.\n\n## Products\n\nOur API service provides access to the products module, which allows you to retrieve product information. You can retrieve all products or filter products by category, price range, or other attributes. You can also add new products, update existing products, or delete products.\n\nTo retrieve all products, you can send a GET request to the products endpoint. If you want to filter products, you can send a GET request with query parameters for the attributes you want to filter by.\n\nTo add a new product, you can send a POST request to the products endpoint with the product information in the request body.\n\nTo update an existing product, you can send a PUT request to the products endpoint with the product ID in the URL and the updated product information in the request body.\n\nTo delete a product, you can send a DELETE request to the products endpoint with the product ID in the URL.\n\n## Orders\n\nOur API service provides access to the orders module, which allows you to retrieve order information. You can retrieve all orders or filter orders by status, date range, or other attributes. You can also create new orders, update existing orders, or cancel orders.\n\nTo retrieve all orders, you can send a GET request to the orders endpoint. If you want to filter orders, you can send a GET request with query parameters for the attributes you want to filter by.\n\nTo create a new order, you can send a POST request to the orders endpoint with the order information in the request body.\n\nTo update an existing order, you can send a PUT request to the orders endpoint with the order ID in the URL and the updated order information in the request body.\n\nTo cancel an order, you can send a PUT request to the orders endpoint with the order ID in the URL and the cancel status in the request body.\n\n## Payments\n\nOur API service provides access to the payments module, which allows you to retrieve payment information. You can retrieve all payments or filter payments by status, date range, or other attributes. You can also create new payments or update existing payments.\n\nTo retrieve all payments, you can send a GET request to the payments endpoint. If you want to filter payments, you can send a GET request with query parameters for the attributes you want to filter by.\n\nTo create a new payment, you can send a POST request to the payments endpoint with the payment information in the request body.\n\nTo update an existing payment, you can send a PUT request to the payments endpoint with the payment ID in the URL and the updated payment information in the request body.\n\n## Shipping\n\nOur API service provides access to the shipping module, which allows you to retrieve shipping information. You can retrieve all shipping information or filter shipping information by status, date range, or other attributes. You can also create new shipping information or update existing shipping information.\n\nTo retrieve all shipping information, you can send a GET request to the shipping endpoint. If you want to filter shipping information, you can send a GET request with query parameters for the attributes you want to filter by.\n\nTo create new shipping information, you can send a POST request to the shipping endpoint with the shipping information in the request body.\n\nTo update existing shipping information, you can send a PUT request to the shipping endpoint with the shipping ID in the URL and the updated shipping information in the request body.\n\n## Error Handling\n\nOur API service will return error responses when errors occur. The error response will include an error code and error message to help you diagnose the problem. Error codes will be in the 4xx or 5xx range and will indicate the type of error that occurred.\n\n## Rate Limiting\n\nOur API service implements rate limiting to prevent abuse and ensure that all users have fair access to the service. Each API endpoint has a rate limit, which limits the number of requests that can be made within a certain time period. If you exceed the rate limit, you will receive a 429 Too Many Requests response.\n\n## Conclusion\n\nOur API service provides access to various modules including authentication, products, orders, payments, and shipping. You can use our API service to retrieve information, create new items, update existing items, and delete items. Error handling and rate limiting are implemented to ensure the service is used fairly and securely. If you have any questions or need further assistance, please don't hesitate to contact our support team.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "5841137-e6bbd3e2-d42e-4475-a338-7f6559aaf3ff"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"id": "4ac6212d-0e31-48d8-8daa-2ff9baf4d678",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MobileNo\": \"9750022978\",\r\n    \"Password\":\"Asdf@123$\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/login",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAuthUser",
+					"id": "b5e72d61-591f-44d4-acb7-badbd7cdaeae",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseurl}}/current-user",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"current-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"id": "1956e1a6-3050-4bb6-aede-52940e926f3d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "FullName",
+									"value": "FullName",
+									"type": "text"
+								},
+								{
+									"key": "MobileNo",
+									"value": "8566935133",
+									"type": "text"
+								},
+								{
+									"key": "Password",
+									"value": "bharani@123",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "LoginName",
+									"value": "ytest",
+									"type": "text"
+								},
+								{
+									"key": "Landline",
+									"value": "9566935886",
+									"type": "text"
+								},
+								{
+									"key": "EmailAddress",
+									"value": "bharini.1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "1995-01-11",
+									"type": "text"
+								},
+								{
+									"key": "Gender",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "DoorNumber",
+									"value": "16",
+									"type": "text"
+								},
+								{
+									"key": "Street",
+									"value": "Gandhi Nagar",
+									"type": "text"
+								},
+								{
+									"key": "Area",
+									"value": "Gandhi nagar",
+									"type": "text"
+								},
+								{
+									"key": "City",
+									"value": "Trichy",
+									"type": "text"
+								},
+								{
+									"key": "State",
+									"value": "Tamilnadu",
+									"type": "text"
+								},
+								{
+									"key": "Landmark",
+									"value": "near GK hospital",
+									"type": "text"
+								},
+								{
+									"key": "Location",
+									"value": "10.77719842748569, 78.72602922540203",
+									"type": "text"
+								},
+								{
+									"key": "FirstName",
+									"value": "Bharani Karthikeyan",
+									"type": "text"
+								},
+								{
+									"key": "LastName",
+									"value": "Angappan",
+									"type": "text"
+								},
+								{
+									"key": "Country",
+									"value": "India",
+									"type": "text"
+								},
+								{
+									"key": "Address",
+									"value": "door no: 16,Ashok nagar,Trichy",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseurl}}/register",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyAccount",
+					"id": "0a5dd389-1719-487e-adf8-e9bc1d8609a4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"OTP\":\"998877\",\n    \"MobileNo\":\"9006935886\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/verify-account",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"verify-account"
+							],
+							"query": [
+								{
+									"key": "deleted",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendOTP",
+					"id": "03fa632e-2e28-4a46-bc00-9d06a64103a3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n    \"MobileNo\":\"9006935886\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/send-otp",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"send-otp"
+							],
+							"query": [
+								{
+									"key": "deleted",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resetPassword",
+					"id": "3ac473a5-d209-41cd-99a4-fb026ce47afc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"OTP\":\"998877\",\n    \"MobileNo\":\"9566935886\",\n    \"Password\":\"12345678\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/reset-password",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"reset-password"
+							],
+							"query": [
+								{
+									"key": "deleted",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders",
+					"id": "dacf2065-d3c9-40bd-a118-e7f46f6071fb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseurl}}/auth/orders",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"auth",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "1df08435-94f6-431d-afc8-0d7ca33acad3"
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "getAllUsers",
+					"id": "f1d52456-2a75-4d9b-b8cc-174fa7c12e5a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/users",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "deleted",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserUserById",
+					"id": "b2726379-0765-4fe6-823f-00acf2f6e0c2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseurl}}/users/2",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"users",
+								"2"
+							],
+							"query": [
+								{
+									"key": "deleted",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "b0653c21-0977-48a2-bad8-ac31c7202e06",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "MobileNo",
+									"value": "9750022933",
+									"type": "text"
+								},
+								{
+									"key": "Password",
+									"value": "Asdf@123$",
+									"type": "text"
+								},
+								{
+									"key": "FirstName",
+									"value": "Arul Murugna",
+									"type": "text"
+								},
+								{
+									"key": "LastName",
+									"value": "Angappan",
+									"type": "text"
+								},
+								{
+									"key": "LoginName",
+									"value": "9944781003",
+									"type": "text"
+								},
+								{
+									"key": "EmailAddress",
+									"value": "mailtoarull@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "Address",
+									"value": "Anna nagar, Chennai",
+									"type": "text"
+								},
+								{
+									"key": "Country",
+									"value": "India",
+									"type": "text"
+								},
+								{
+									"key": "State",
+									"value": "Tamilnadu",
+									"type": "text"
+								},
+								{
+									"key": "Location",
+									"value": "123456,1234678",
+									"type": "text"
+								},
+								{
+									"key": "DoorNumber",
+									"value": "87",
+									"type": "text"
+								},
+								{
+									"key": "Street",
+									"value": "Besant Street",
+									"type": "text"
+								},
+								{
+									"key": "Landmark",
+									"value": "near Dharan hospital",
+									"type": "text"
+								},
+								{
+									"key": "Area",
+									"value": "Valasaiyur",
+									"type": "text"
+								},
+								{
+									"key": "City",
+									"value": "Chennai",
+									"type": "text"
+								},
+								{
+									"key": "Gender",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "FullName",
+									"value": "Arul Angappan",
+									"type": "text"
+								},
+								{
+									"key": "Landline",
+									"value": "0427-456456",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "1989-07-20",
+									"type": "text"
+								},
+								{
+									"key": "DeletedDate",
+									"value": "NULL",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/arul/Downloads/images.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseurl}}/users/333",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"users",
+								"333"
+							],
+							"query": [
+								{
+									"key": "deleted",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "73438834-5ec9-4291-9945-90056129f49d"
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "categories",
+					"item": [
+						{
+							"name": "categories",
+							"id": "c8e81066-bfb0-4ef1-8bbe-28913a188cec",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseurl}}/productCategories",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"productCategories"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "59d320b3-a319-471b-ba1c-540399040062"
+				},
+				{
+					"name": "products",
+					"item": [
+						{
+							"name": "products",
+							"id": "07bb8b8a-7746-4682-a401-16cf25b7dbd8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseurl}}/productMasters",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"productMasters"
+									],
+									"query": [
+										{
+											"key": "ProductGUID",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "ProductName",
+											"value": "Cow Milk Bottle",
+											"disabled": true
+										},
+										{
+											"key": "ProductCode",
+											"value": "MILK-CMP-001",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "6e0ad1b7-d2a3-4a16-b960-8b76dd9fc7ce"
+				},
+				{
+					"name": "subcategories",
+					"item": [
+						{
+							"name": "subcategories",
+							"id": "73377580-df3d-4dd3-8f55-86af05d2f5c6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/productSubCategories",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"productSubCategories"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "495da6cb-f8ea-468e-bf95-bf1f9da4a539"
+				}
+			],
+			"id": "e541ac53-77f6-41fd-901d-d5bb4c4a3e39"
+		},
+		{
+			"name": "app",
+			"item": [
+				{
+					"name": "config",
+					"id": "4cbd01cf-53f9-4f5f-86be-794b80f12ac8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/app/config",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"app",
+								"config"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "8ba95d8c-89e7-4607-9b71-db2330a1dac7"
+		},
+		{
+			"name": "sale",
+			"item": [
+				{
+					"name": "getAllSales",
+					"id": "77415039-3972-46df-b7d7-36d58e1c542a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseurl}}/sales",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"sales"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "2693d141-2267-497a-b584-eb3f3699023b"
+		},
+		{
+			"name": "http://localhost:3000/categories/box.png",
+			"id": "52b5dbd2-8893-4b44-b2ec-d47437ee1191",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/categories/box.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categories",
+						"box.png"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d85b7dac-fbe8-4269-9221-20c8c9d67f2c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f6f97929-5d1e-410f-b1c4-72b34af90129",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

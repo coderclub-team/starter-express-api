@@ -1,0 +1,46 @@
+[
+  {
+    "ProductCategoryGUID": 1,
+    "ProductCategoryName": "Milk",
+    "IsActive": true,
+    "SortOrder": 0,
+    "PhotoPath": "http://localhost:3000/categories/box.png",
+    "ProductCategoryDescription": null,
+    "ProductCategorySlug": null,
+    "Products": [
+      {
+        "ProductGUID": 1,
+        "ProductID": "MILK-CM-001",
+        "ProductName": "Cow Milk",
+        "ProductCode": "MILK-CM-001",
+        "UnitPrice": 29,
+        "SaleRate": 27,
+        "MRP": 29,
+        "GST": 0,
+        "Qty": 0,
+        "UnitsInStock": 10,
+        "IsActive": 1,
+        "CreatedDate": "2023-02-12T23:30:21.310Z",
+        "SKU": "500",
+        "UOM": "ML",
+        "UOMTypeGUID": 19,
+        "PhotoPath": "http://localhost:3000/products/cow-milk.jpg",
+        "ProductType": "SIMPLE",
+        "GalleryPhotoPath1": "http://localhost:3000/products/cow-milk.jpg",
+        "GalleryPhotoPath2": "http://localhost:3000/products/1682673531854.png",
+        "GalleryPhotoPath3": "http://localhost:3000/products/1682678567469.png",
+        "GalleryPhotoPath4": "http://localhost:3000/products/1682678654450.png",
+        "ProductDescription": "Milk is a dairy product that is produced by mammals and consumed by humans. It is a rich source of calcium and other nutrients and is commonly used in cooking, baking, and as a beverage.",
+        "IsFeatured": false,
+        "OnSale": false,
+        "Width": 16,
+        "Height": 2,
+        "Length": 14,
+        "Weight": 0,
+        "ProductSlug": "cow_mik",
+        "ProductCategoryGUID": 1,
+        "UpdatedAt": null
+      }
+    ]
+  }
+]

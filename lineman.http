@@ -1,0 +1,121 @@
+POST {{baseUrl}}/lineman/2/register/request
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="name"
+
+Abinaya Nallathambi
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="email"
+
+abinaya@gmail.com
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="phone"
+
+9750022933
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="address"
+
+Valasaiyur
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="city"
+
+salem
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="state"
+
+tamilnadu
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="pincode"
+
+636122
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="password"
+
+Asdf@123$
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="aadhaar_front"; filename="aadhaar_front.png"
+Content-Type: image/png
+
+< /Users/arul/Downloads/aadhaar.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="aadhaar_back"; filename="aadhaar_back.png"
+Content-Type: image/png
+
+< /Users/arul/Downloads/aadhaar_back.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="driving_licence_front"; filename="driving_licence_front.png"
+Content-Type: image/png
+
+< /Users/arul/Downloads/driving.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="driving_licence_back"; filename="driving_licence_back.png"
+Content-Type: image/png
+
+< /Users/arul/Downloads/driving_back.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+POST {{baseUrl}}/lineman/2/register/request/confirm
+Content-Type: application/json
+
+{
+    "otp": "998877",
+    "mobile_no": "9750022933"
+}
+###
+POST http://{{baseUrl}}/stores/2/lineman/password/reset/request
+Content-Type: application/json
+
+{
+    "mobile_no": "9750022933"
+}
+
+###
+
+POST http://{{baseUrl}}/stores/2/lineman/password/reset/request/confirm
+Content-Type: application/json
+
+{
+    "mobile_no": "9750022933",
+    "otp": "998877",
+    "password": "Asdf@123$"
+}
+###
+POST {{baseUrl}}/lineman/2/login/request
+Content-Type: application/json
+
+{
+    "mobile_no": "9750022933",
+    "password":"Asdf@123$"
+}
+
+###
+GET {{baseUrl}}/customers/all
+
+###
+
+GET {{baseUrl}}/customers/1
+
+###
+
+POST {{baseUrl}}/customers/create/request
+Content-Type: application/json
+
+{
+    "name":"Ganehs",
+    "address":"anna nagar",
+    "city":"chennai",
+    "gst_number":"gst35282827",
+    "phone":"8989898989",
+    "email":"abc@gmail.com"
+}
+# name: zod.string().min(3).max(50),
+#         description: zod.string().min(3).max(50).optional(),
+#         address: zod.string().min(3).max(50).optional(),
+#         city: zod.string().min(3).max(50).optional(),
+#         state: zod.string().min(3).max(50).optional(),
+#         gst_number: zod.string().min(3).max(50).optional(),
+#         phone: zod.string().min(3).max(50),
+#         email: zod.string().email(),

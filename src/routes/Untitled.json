@@ -1,0 +1,27 @@
+[
+  {
+    "SalesMasterGUID": 1207,
+    "SaleOrderID": "S0001207",
+    "SaleType": null,
+    "PaymentMode": 70,
+    "SalemanGUID": null,
+    "LinemanGUID": null,
+    "StoreGUID": 7,
+    "CreatedGUID": 7,
+    "CustomerGUID": 7,
+    "ModifiedDate": null,
+    "DeletedDate": null,
+    "IncentiveStatusGUID": null,
+    "SaleChannel": "ONLINE",
+    "SalePlatform": "unknown",
+    "SaleOrderDate": "2023-10-25T12:46:23.022",
+    "UpdatedDate": null,
+    "Status": "PLACED",
+    "PromotionGUID": null,
+    "PaymentTransactionID": "1310",
+    "TotalAmount": 27.00,
+    "WalletGUID": null,
+    "GrossTotal": 27.00,
+    "CreatedDate": "2023-10-25T18:16:23.2233474"
+  }
+]

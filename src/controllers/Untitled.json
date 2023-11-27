@@ -1,0 +1,713 @@
+[
+  {
+    "GlobalTypeGUID": 1,
+    "GlobalTypeName": "ML",
+    "Description": "Millies",
+    "GlobalTypeCategoryGUID": 1,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-13T08:54:05.347",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 2,
+    "GlobalTypeName": "LTR",
+    "Description": "Litre",
+    "GlobalTypeCategoryGUID": 1,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-13T08:54:05.347",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 3,
+    "GlobalTypeName": "GRAM",
+    "Description": "Grams",
+    "GlobalTypeCategoryGUID": 1,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-13T08:54:05.347",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 4,
+    "GlobalTypeName": "KG",
+    "Description": "Kilo Grams",
+    "GlobalTypeCategoryGUID": 1,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-13T08:54:05.347",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 5,
+    "GlobalTypeName": "1",
+    "Description": "1",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 6,
+    "GlobalTypeName": "2",
+    "Description": "2",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 7,
+    "GlobalTypeName": "5",
+    "Description": "5",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 8,
+    "GlobalTypeName": "10",
+    "Description": "10",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 9,
+    "GlobalTypeName": "13",
+    "Description": "13",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 10,
+    "GlobalTypeName": "15",
+    "Description": "15",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 11,
+    "GlobalTypeName": "50",
+    "Description": "50",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 12,
+    "GlobalTypeName": "100",
+    "Description": "100",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 13,
+    "GlobalTypeName": "130",
+    "Description": "130",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 14,
+    "GlobalTypeName": "150",
+    "Description": "150",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 15,
+    "GlobalTypeName": "180",
+    "Description": "180",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 16,
+    "GlobalTypeName": "200",
+    "Description": "200",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 17,
+    "GlobalTypeName": "250",
+    "Description": "250",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 18,
+    "GlobalTypeName": "450",
+    "Description": "450",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 19,
+    "GlobalTypeName": "500",
+    "Description": "500",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 20,
+    "GlobalTypeName": "1000",
+    "Description": "1000",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:46.093",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 21,
+    "GlobalTypeName": "1",
+    "Description": "1",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 22,
+    "GlobalTypeName": "2",
+    "Description": "2",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 23,
+    "GlobalTypeName": "5",
+    "Description": "5",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 24,
+    "GlobalTypeName": "10",
+    "Description": "10",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 25,
+    "GlobalTypeName": "13",
+    "Description": "13",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 26,
+    "GlobalTypeName": "15",
+    "Description": "15",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 27,
+    "GlobalTypeName": "50",
+    "Description": "50",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 28,
+    "GlobalTypeName": "100",
+    "Description": "100",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 29,
+    "GlobalTypeName": "130",
+    "Description": "130",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 30,
+    "GlobalTypeName": "150",
+    "Description": "150",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 31,
+    "GlobalTypeName": "180",
+    "Description": "180",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 32,
+    "GlobalTypeName": "200",
+    "Description": "200",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 33,
+    "GlobalTypeName": "250",
+    "Description": "250",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 34,
+    "GlobalTypeName": "450",
+    "Description": "450",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 35,
+    "GlobalTypeName": "500",
+    "Description": "500",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 36,
+    "GlobalTypeName": "1000",
+    "Description": "1000",
+    "GlobalTypeCategoryGUID": 2,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-23T21:31:50.227",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 37,
+    "GlobalTypeName": "1331",
+    "Description": "331313",
+    "GlobalTypeCategoryGUID": 1,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-25T08:11:26.29",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 39,
+    "GlobalTypeName": "333",
+    "Description": "1111",
+    "GlobalTypeCategoryGUID": 1,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-25T08:14:58.717",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 40,
+    "GlobalTypeName": "POS",
+    "Description": "POS",
+    "GlobalTypeCategoryGUID": 3,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-26T11:32:54.053",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 41,
+    "GlobalTypeName": "Cash",
+    "Description": "Cash",
+    "GlobalTypeCategoryGUID": 3,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-26T11:33:13.157",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 42,
+    "GlobalTypeName": "Test",
+    "Description": "100",
+    "GlobalTypeCategoryGUID": 1,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-27T01:40:27.077",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 43,
+    "GlobalTypeName": "Retail Shops",
+    "Description": "Shop Sale",
+    "GlobalTypeCategoryGUID": 4,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-28T00:18:49.887",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 44,
+    "GlobalTypeName": "Lineman",
+    "Description": "Lineman Sale",
+    "GlobalTypeCategoryGUID": 4,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-02-28T00:19:24.553",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 45,
+    "GlobalTypeName": "Shopwise Sales Report",
+    "Description": "Shopwise Sales Report",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-03-02T23:32:34.41",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 46,
+    "GlobalTypeName": "Linemanwise Sales Report",
+    "Description": "Linemanwise Sales Report",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-03-02T23:33:32.88",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 47,
+    "GlobalTypeName": "Branch Collection Summary",
+    "Description": "Branch Collection Summary",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-03-02T23:34:16.223",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 48,
+    "GlobalTypeName": "Stationary",
+    "Description": "Stationary",
+    "GlobalTypeCategoryGUID": 6,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-03-10T06:43:31.44",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 49,
+    "GlobalTypeName": "EB Bill",
+    "Description": "Utility Bills",
+    "GlobalTypeCategoryGUID": 6,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-03-10T06:44:09.943",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 50,
+    "GlobalTypeName": "Card",
+    "Description": "Card Payment",
+    "GlobalTypeCategoryGUID": 3,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-03-10T08:07:05.933",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 51,
+    "GlobalTypeName": "UPI",
+    "Description": "UPI Payment",
+    "GlobalTypeCategoryGUID": 3,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-03-10T08:07:29.137",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 52,
+    "GlobalTypeName": "Net Banking",
+    "Description": "Net Banking",
+    "GlobalTypeCategoryGUID": 3,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-03-10T08:07:47.367",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 53,
+    "GlobalTypeName": "admin",
+    "Description": "admin",
+    "GlobalTypeCategoryGUID": 7,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-03-24T23:25:13.323",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 54,
+    "GlobalTypeName": "User",
+    "Description": "User",
+    "GlobalTypeCategoryGUID": 7,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-03-24T23:25:30.853",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 55,
+    "GlobalTypeName": "Shop",
+    "Description": "Shop",
+    "GlobalTypeCategoryGUID": 7,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-03-24T23:25:58.517",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 56,
+    "GlobalTypeName": "Productwise Report",
+    "Description": "Productwise Report",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-03-30T23:49:22.83",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 57,
+    "GlobalTypeName": "Payment Type wise Report",
+    "Description": "Payment Type wise Report",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 184,
+    "CreatedDate": "2023-04-10T21:55:39.637",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 58,
+    "GlobalTypeName": "Income vs Expenses Report",
+    "Description": "Income vs Expenses Report",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 184,
+    "CreatedDate": "2023-04-10T22:06:18.163",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 59,
+    "GlobalTypeName": "Sales Return Summary Report",
+    "Description": "Sales Return Summary Report",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-04-20T22:45:01.78",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 60,
+    "GlobalTypeName": "Incentive Report",
+    "Description": "Incentive Report",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-04-28T20:10:10.2",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 61,
+    "GlobalTypeName": "Commission Report",
+    "Description": "Commission Report",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-05-18T22:52:31.4",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 62,
+    "GlobalTypeName": "Shop Sale - Counter",
+    "Description": "Shop Sale - Counter",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 349,
+    "CreatedDate": "2023-05-19T17:24:37.233",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 63,
+    "GlobalTypeName": "Retail Shop",
+    "Description": "Retail Shop Customer",
+    "GlobalTypeCategoryGUID": 8,
+    "CreatedGUID": 349,
+    "CreatedDate": "2023-05-30T23:03:40.637",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 64,
+    "GlobalTypeName": "Card Holder",
+    "Description": "Card Holder",
+    "GlobalTypeCategoryGUID": 8,
+    "CreatedGUID": 349,
+    "CreatedDate": "2023-05-30T23:04:48.117",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 65,
+    "GlobalTypeName": "Lineman Deposit Report",
+    "Description": "Lineman Deposit Report",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-06-16T23:33:26.857",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 66,
+    "GlobalTypeName": "Monthly Incentive Report",
+    "Description": "Monthly Incentive Report",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-06-16T23:37:23.33",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 67,
+    "GlobalTypeName": "Lineman Ledger Report",
+    "Description": "Lineman Ledger Report",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-06-16T23:38:30.14",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 68,
+    "GlobalTypeName": "Stock Inward/Outward Report",
+    "Description": "Stock Inward/Outward Report",
+    "GlobalTypeCategoryGUID": 5,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-06-16T23:39:37.577",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 69,
+    "GlobalTypeName": "User App Sale",
+    "Description": null,
+    "GlobalTypeCategoryGUID": 4,
+    "CreatedGUID": null,
+    "CreatedDate": null,
+    "IsActive": null
+  },
+  {
+    "GlobalTypeGUID": 70,
+    "GlobalTypeName": "Wallet",
+    "Description": null,
+    "GlobalTypeCategoryGUID": 3,
+    "CreatedGUID": null,
+    "CreatedDate": null,
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 71,
+    "GlobalTypeName": "Credit Card",
+    "Description": null,
+    "GlobalTypeCategoryGUID": 3,
+    "CreatedGUID": null,
+    "CreatedDate": null,
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 72,
+    "GlobalTypeName": "Debit Card",
+    "Description": null,
+    "GlobalTypeCategoryGUID": 3,
+    "CreatedGUID": null,
+    "CreatedDate": null,
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 73,
+    "GlobalTypeName": "Counter Sale",
+    "Description": "Counter Sale",
+    "GlobalTypeCategoryGUID": 4,
+    "CreatedGUID": 349,
+    "CreatedDate": "2023-09-27T00:15:32.45",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 74,
+    "GlobalTypeName": "QR Code",
+    "Description": "QR Code",
+    "GlobalTypeCategoryGUID": 4,
+    "CreatedGUID": 349,
+    "CreatedDate": "2023-09-27T00:15:51.027",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 75,
+    "GlobalTypeName": "Tets",
+    "Description": "test",
+    "GlobalTypeCategoryGUID": 7,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-10-19T11:25:48.953",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 76,
+    "GlobalTypeName": "tested",
+    "Description": "tested",
+    "GlobalTypeCategoryGUID": 7,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-10-19T11:27:55.04",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 77,
+    "GlobalTypeName": "11",
+    "Description": "122",
+    "GlobalTypeCategoryGUID": 7,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-10-19T11:29:53.63",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 78,
+    "GlobalTypeName": "Wallet",
+    "Description": "Wallet",
+    "GlobalTypeCategoryGUID": 3,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-10-19T12:05:24.157",
+    "IsActive": "0"
+  },
+  {
+    "GlobalTypeGUID": 79,
+    "GlobalTypeName": "Google Psy",
+    "Description": "Google Psy",
+    "GlobalTypeCategoryGUID": 9,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-10-19T12:47:08.613",
+    "IsActive": "1"
+  },
+  {
+    "GlobalTypeGUID": 80,
+    "GlobalTypeName": "Phonepe",
+    "Description": "phonepe",
+    "GlobalTypeCategoryGUID": 9,
+    "CreatedGUID": 1,
+    "CreatedDate": "2023-10-19T12:49:17.517",
+    "IsActive": "0"
+  }
+]
